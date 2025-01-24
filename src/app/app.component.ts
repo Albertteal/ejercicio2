@@ -7,8 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   n: number | null = null;
+  result: number | null = null;
 
   onCalculateSeries(value: number): void {
     this.n = value; // Actualiza el valor de "n" cuando se recibe del InputFormComponent
+  }
+  onResultCalculated(value: number): void {
+    this.result = value; // Recibe el resultado calculado desde SeriesCalculatorComponent
   }
 }

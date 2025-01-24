@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-result-display',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./result-display.component.css']
 })
 export class ResultDisplayComponent {
+  @Input() result: number | null = null; // Recibe el resultado calculado
 
 }
