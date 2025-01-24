@@ -1,1 +1,12 @@
-<p>input-form works!</p>
+<div class="input-form-container">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label for="n"> Ingresa el valor de n:</label>
+    <input
+    type="number"
+    id="n"
+    formControlName="n"
+    placeholder="Ingresa un número"
+    />
+
+  </form>
+</div>

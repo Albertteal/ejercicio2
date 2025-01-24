@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SeriesCalculatorComponent } from './features/series-calculator/series-calculator.component';
 import { ResultDisplayComponent } from './features/result-display/result-display.component';
 import { InputFormComponent } from './features/input-form/input-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { InputFormComponent } from './features/input-form/input-form.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
