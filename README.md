@@ -1,27 +1,57 @@
-# Ejercicio2
+Serie Numérica en Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
+Este proyecto implementa una aplicación en Angular que calcula el término  de una serie numérica, basada en números triangulares, primos y de Fibonacci. La aplicación incluye:
 
-## Development server
+*Componentes modulares para manejar entrada de datos, cálculo de datos y visualización de resultados.
+*Pruebas unitarias para validar la funcionalidad del cálculo de la serie.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Estructura del Proyecto
 
-## Code scaffolding
+src/
+|-- app/
+    |-- features/
+        |-- input-form/
+        |-- result-display/
+        |-- series-calculator/
+    |-- app.module.ts
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+    Instalación
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Clona el repositorio:
 
-## Running end-to-end tests
+git clone <[[URL_DEL_REPOSITORIO](https://github.com/Albertteal/ejercicio2.git)]>
+cd <Ejercicio2>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Instala las dependencias:
 
-## Further help
+npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Inicia la aplicación:
+
+ng serve
+
+Accede a la aplicación en el navegador:
+http://localhost:4200
+
+
+Uso
+
+Introduce un valor para  en el formulario.
+
+Presiona el botón "Calcular".
+
+El resultado se mostrará en pantalla.
+
+
+Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, realiza un fork del repositorio y abre un pull request con tus cambios.
+
+Licencia
+
+Este proyecto se encuentra bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+
