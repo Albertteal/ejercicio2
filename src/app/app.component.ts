@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ejercicio2';
+  n: number | null = null;
+
+  onCalculateSeries(value: number): void {
+    this.n = value; // Actualiza el valor de "n" cuando se recibe del InputFormComponent
+  }
 }
