@@ -7,6 +7,11 @@
     formControlName="n"
     placeholder="Ingresa un número"
     />
-
+    <div *ngIf="form.controls['n'].invalid && form.controls['n'].touched">
+      <small *ngIf="form.controls['n'].errors?.['required']">El campo es requerido.</small>
+      <small *ngIf="form.controls['n'].errors?.['min']">El número debe de ser mayor a 0.</small>
+      <small *ngIf="form.controls['n'].errors?.['pattern']">Ingresa un número válido.</small>
+      <button type="submit" [disabled]="form.invalid">Calcular</button>
+    </div>
   </form>
 </div>
